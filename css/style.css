@@ -358,7 +358,7 @@ nav .desktop-nav li a:hover {
     /* background-color:#25d366; */
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
-    font-size:24px;
+    font-size:28px;
     z-index:100;
     display: flex;
     justify-content: center;
