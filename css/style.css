@@ -64,7 +64,8 @@ section{
 button{
     border: none;
     border-radius: .5rem;
-    padding: 1rem;
+    padding: 1.5rem;
+    font-size: 1rem;
     font-weight: 700;
     background-color: #4e9bff;
     color: white;
