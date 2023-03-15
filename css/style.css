@@ -5,6 +5,10 @@
     margin: 0;
     padding: 0;
 }
+.alogo{
+    color: black;
+    text-decoration: none;
+}
 nav{
     width: 100%;
     position: fixed;
@@ -33,12 +37,14 @@ nav .logo{
     height: 800px;
     background-size: cover;
     background: url(https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1744&q=80);
-    padding: 0 1.5rem;
+    padding: 1.5rem 2rem;
 }
 .slogan h1{
+    margin-top: 50px;
+    width: 100%;
     height: auto;
     color: white;
-    font-size: 8vw;
+    font-size: 2rem;
     font-weight: 800;
 }
 h2{
@@ -75,6 +81,7 @@ button:hover{
     background-color: #4e9bffca;
 }
 footer{
+    padding: 2em;
     text-align: center;
     background-color: black;
     color: white;
@@ -83,3 +90,75 @@ footer p{
     font-size: .8rem;
     font-weight: 600;
 }
+/* Servicios */
+.slogan-servicios{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 800px;
+    background-size: cover;
+    background-position: center;
+    background: url(https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1120&q=80);
+    padding: 1.5rem 2rem;
+}
+.gradient{
+    background: linear-gradient(270deg, #0a1576, #450b26);
+    background-size: 300% 300%;
+    -webkit-animation: AnimationName 29s ease infinite;
+    -moz-animation: AnimationName 29s ease infinite;
+    -o-animation: AnimationName 29s ease infinite;
+    animation: AnimationName 29s ease infinite;
+}
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+/* Card Services */
+.card-services{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+.card{
+    padding: 1rem;
+    border: solid 1px #4e9bff;
+    border-radius: 1rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    
+}
+.card ul li{
+    list-style: none;
+    padding: .3rem;
+}
+@media (min-width: 800px) {
+    .card-services{
+        flex-direction:row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    }
