@@ -5,6 +5,9 @@
     margin: 0;
     padding: 0;
 }
+a{
+    color: white;
+}
 .alogo{
     color: black;
     text-decoration: none;
@@ -74,7 +77,7 @@ button{
     font-size: 1rem;
     font-weight: 700;
     background-color: #4e9bff;
-    color: white;
+    color: black;
     cursor: pointer;
 }
 button:hover{
