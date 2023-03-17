@@ -27,7 +27,7 @@ b{
     color: #4e9bff;
 }
 .menu{
-    
+    display: none;
 }
 nav .logo{
     font-family: Montserrat, Arial, Helvetica, sans-serif;
