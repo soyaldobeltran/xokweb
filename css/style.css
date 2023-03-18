@@ -22,13 +22,81 @@ nav{
     align-items: center;
     padding: 5px 20px;
     background-color: rgb(255, 255, 255);
+    z-index: 5;
 }
 b{
     color: #4e9bff;
 }
+/* menu */
 .menu{
+    padding: 0;
+    margin: 0;
+    background-color:transparent;
+}
+
+.menu:hover{
+    background-color: transparent;
+}
+.active{
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(.5rem);
+    background-color: rgba(0, 0, 0, 0.77);
+    z-index: 10;
+}
+.mobile-menu{
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(.5rem);
+    background-color: rgba(0, 0, 0, 0.77);
+    z-index: 10;
     display: none;
 }
+.active{
+    display: block;
+    animation: changecolor;
+    animation-duration: 1s;
+}
+
+@keyframes changecolor {
+    from{
+        background-color: rgba(0, 0, 0, 0);
+    }
+    to{
+        background-color: rgba(0, 0, 0, 0.77);
+    }
+}
+
+.mobile-menu .links-menu{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+}
+.mobile-menu .links-menu, .links-menu a{
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 4rem;
+    gap: 2rem;
+}
+
+.menu-close{
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    justify-content: flex-end;
+}
+.menu-close:hover{
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.615);
+}
+
 nav .logo{
     font-family: Montserrat, Arial, Helvetica, sans-serif;
     font-size: 50px;
