@@ -37,18 +37,12 @@ b{
 .menu:hover{
     background-color: transparent;
 }
-.active{
-    width: 100vw;
-    height: 100vh;
-    backdrop-filter: blur(.5rem);
-    background-color: rgba(0, 0, 0, 0.77);
-    z-index: 10;
-}
+
 .mobile-menu{
     width: 100vw;
     height: 100vh;
     backdrop-filter: blur(.5rem);
-    background-color: rgba(0, 0, 0, 0.77);
+    background-color: rgba(0, 0, 0, 0.80);
     z-index: 10;
     display: none;
 }
@@ -63,7 +57,7 @@ b{
         background-color: rgba(0, 0, 0, 0);
     }
     to{
-        background-color: rgba(0, 0, 0, 0.77);
+        background-color: rgba(0, 0, 0, 0.80);
     }
 }
 
